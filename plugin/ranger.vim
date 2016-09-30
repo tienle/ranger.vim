@@ -60,5 +60,5 @@ else
     endfunction
 endif
 
-map <leader>f :call OpenRanger('%:p:h')<CR>
-map <leader>F :call OpenRanger('')<CR>
+command! Ranger call OpenRanger('')
+command! RangerFile call OpenRanger('%:p:h')
